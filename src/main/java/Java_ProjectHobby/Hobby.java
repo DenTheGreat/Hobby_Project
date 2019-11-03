@@ -32,7 +32,7 @@ public abstract class Hobby {
                 ", costperyear=" + cost_per_year +
                 '}';
     }
-    public abstract void tell_about_hobby();
+    public abstract void tell_about_hobby(int variable) throws hobby_exception  ;
 
 
 }

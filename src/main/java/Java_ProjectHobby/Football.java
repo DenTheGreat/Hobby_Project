@@ -35,7 +35,10 @@ public class Football extends Hobby {
     }
 
     @Override
-    public void tell_about_hobby() {
+    public void tell_about_hobby(int variable) throws hobby_exception {
+        if(variable<20){
+            throw new hobby_exception("Footbal error, variable<20");
+        }
         System.out.println(this.toString());
         System.out.println("My favorite hobby is football");
     }
